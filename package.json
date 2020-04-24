@@ -1,0 +1,30 @@
+{
+  "name": "twiliosync-library",
+  "version": "1.0.0",
+  "description": "TwilioSync Library for Twilio CLI Serverless",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobilebiz/twiliosync-library.git"
+  },
+  "keywords": [
+    "twilio",
+    "twiliosync",
+    "twiliocli"
+  ],
+  "author": "Katsumi Takahashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobilebiz/twiliosync-library/issues"
+  },
+  "homepage": "https://github.com/mobilebiz/twiliosync-library#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "twilio": "^3.42.2"
+  }
+}
