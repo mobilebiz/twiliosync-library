@@ -1,16 +1,24 @@
-# twilioSyncLibrary for TwilioCLI
+# TwilioSyncLibrary for TwilioCLI
 
 Twilio CLI Serverless で Twilio Sync を簡単に扱うためのライブラリです。
 Assets 内のプライベートファイルとして利用します。
 
+- [Twilio Sync](https://jp.twilio.com/sync)
+- 複数のデバイス間で情報を同期させるためのサービス
+- WebSocketやSocket.ioのようなリアルタイム通信プラットフォーム
+- Syncは、受け取ったデータをTwilio上に保存してから配信する
+- Sync上のデータは、TTLオプションにより生存時間を設定できる
+- Documents / Lists / Maps / Message Streams の4種類のデータを扱うことが可能
+- 各オブジェクトにはACLを設定することが可能
+
 ## Features
 
-現在のバージョンでは、Twilio Sync のドキュメントオブジェクトにのみ対応しています。
+Twilio Functions から簡単にTwilio Sync のオブジェクトを生成したり、データを書き込んだり、更新・削除が可能です。
 
 ## Requirement
 
-* twilio 3.42.2
-* dotenv 8.2.0 （テストで利用）
+- twilio 3.42.2
+- dotenv 8.2.0 （テストで利用）
 
 ## Installation
 
@@ -57,11 +65,14 @@ npm install twilio
 
 たとえば、電話番号をドキュメント名として作成し、電話番号に付随する情報をデータとして格納していくことで、簡易的な電話帳として使うなどの応用が可能かとおもいます。
 
+※現在のバージョンでは、Twilio Sync のドキュメントオブジェクトにのみ対応しています。それ以外のオブジェクトは未対応です。  
+排他制御も考慮していません。
+
 ## Author
 
-* 高橋克己
-* グローバル・インターネット・ジャパン株式会社
-* katsumi@gij.com
+- 高橋克己
+- グローバル・インターネット・ジャパン株式会社
+- katsumi@gij.com
 
 ## License
 
