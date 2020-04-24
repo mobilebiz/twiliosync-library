@@ -72,7 +72,8 @@ npm install twilio
 
 - 高橋克己
 - グローバル・インターネット・ジャパン株式会社
-- katsumi@gij.com
+- 株式会社KDDIウェブコミュニケーションズ
+- katsumi@gij.com / katsumi.takahashi@kddi-web.com
 
 ## License
 
