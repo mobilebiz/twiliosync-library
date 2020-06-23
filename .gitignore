@@ -38,3 +38,7 @@ node_modules
 # Environment file
 .env
 
+# .twilio-functions
+.twilio-functions
+
+removeAllNullDoc.js

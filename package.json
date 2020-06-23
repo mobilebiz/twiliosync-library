@@ -2,9 +2,9 @@
   "name": "twiliosync-library",
   "version": "1.0.0",
   "description": "TwilioSync Library for Twilio CLI Serverless",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --testTimeout=30000",
+    "start": "twilio-run --env"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,16 @@
     "url": "https://github.com/mobilebiz/twiliosync-library/issues"
   },
   "homepage": "https://github.com/mobilebiz/twiliosync-library#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "assert": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "jest": "^25.4.0",
+    "twilio-run": "^2.7.0"
   },
   "dependencies": {
-    "twilio": "^3.42.2"
+    "twilio": "^3.46.0"
   }
 }
