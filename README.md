@@ -48,7 +48,33 @@ Twilio Functions から簡単にTwilio Sync のオブジェクトを生成した
 
 ## Installation
 
-まずは、Twilio CLIを使って、Twilio Sync サービスを作成します。
+適当な作業ディレクトリにライブラリをCloneします。
+
+```sh
+% git clone https://github.com/mobilebiz/twiliosync-library.git
+（省略）
+Unpacking objects: 100% (35/35), done.
+% cd twiliosync-library
+% tree
+.
+├── README.md
+├── __tests__
+│   ├── TwilioSyncDoc.js
+│   ├── TwilioSyncList.js
+│   └── TwilioSyncMap.js
+├── assets
+│   └── twilioSync.private.js
+├── functions
+│   ├── twilioSyncDoc.js
+│   ├── twilioSyncList.js
+│   └── twilioSyncMap.js
+├── package-lock.json
+└── package.json
+
+3 directories, 10 files
+```
+
+次に、別の作業ディレクトリに移動してから、Twilio CLIを使って、Twilio Sync サービスを作成します。
 
 ```sh
 % twilio api:sync:v1:services:create --friendly-name [サービス名]
@@ -64,6 +90,7 @@ ISe530cd01d9fa91a6b6e21d8e1b18e4ad  null         サービス名
 ```sh
 % twilio serverless:init --template blank [プロジェクト名]
 （以下略）
+% cd [プロジェクト名]
 ```
 
 次に、本プロジェクト内にある`.env.sample`を参考に、ご自分の作業ディレクトリにある`.env`の内容をご自分の環境に合わせて変更します（ACCOUNT_SIDとAUTH_TOKENは自動で設定されています）。
