@@ -31,6 +31,6 @@
     "twilio-run": "^2.7.0"
   },
   "dependencies": {
-    "twilio": "^3.46.0"
+    "twilio": "^3.83.4"
   }
 }
